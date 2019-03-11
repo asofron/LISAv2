@@ -177,7 +177,7 @@
         <testScript>Max-vCPU.ps1</testScript>
         <setupType>OneVM</setupType>
         <TestParameters>
-            <param>vmMemory=4GB</param>
+            <param>vmMemory=400GB</param>
         </TestParameters>
         <Platform>HyperV</Platform>
         <Category>Functional</Category>
