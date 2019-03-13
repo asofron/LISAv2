@@ -425,7 +425,7 @@
     </test>
     <test>
         <testName>ETHTOOL-CHECK-STATISTICS</testName>
-        <setupScript>.\Testscripts\Windows\SETUP-NET-Add-NIC.ps1,.\Testscripts\Windows\SETUP-NET-Configure-Dependency-VM.ps1,.\Testscripts\Windows\SETUP-Inject-IP-Constants.ps1</setupScript>
+        <setupScript>.\Testscripts\Windows\SETUP-NET-Add-NIC.ps1</setupScript>
         <testScript>Ethtool-Check-Statistics.sh</testScript>
         <files>.\Testscripts\Linux\Ethtool-Check-Statistics.sh,.\Testscripts\Linux\NET-Netperf-Server.sh,.\Testscripts\Linux\utils.sh</files>
         <setupType>TwoVM1Dep</setupType>
@@ -629,6 +629,17 @@
         <testName>ETHTOOL-MISC-INFO</testName>
         <testScript>ETHTOOL-MISC-INFO.sh</testScript>
         <files>.\TestScripts\Linux\ETHTOOL-MISC-INFO.sh,.\TestScripts\Linux\utils.sh</files>
+        <setupType>OneVM</setupType>
+        <Platform>Azure,HyperV</Platform>
+        <Category>Functional</Category>
+        <Area>NETWORK</Area>
+        <Tags>ethtool</Tags>
+        <Priority>1</Priority>
+    </test>
+    <test>
+        <testName>ETHTOOL-COVER</testName>
+        <testScript>ETHTOOL-COVER.sh</testScript>
+        <files>.\TestScripts\Linux\ETHTOOL-COVER.sh,.\TestScripts\Linux\utils.sh</files>
         <setupType>OneVM</setupType>
         <Platform>Azure,HyperV</Platform>
         <Category>Functional</Category>
