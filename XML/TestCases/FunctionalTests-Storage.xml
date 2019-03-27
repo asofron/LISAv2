@@ -773,10 +773,10 @@
     <test>
         <testName>STORAGE-HOT-ADD-DISK-PARALLEL</testName>
         <testScript>DiskHotAddRemove-Parallel.ps1</testScript>
-        <files></files>
         <setupType>OneVM</setupType>
+        <OverrideVMSize>Standard_D8s_v3</OverrideVMSize>
         <testParameters>
-            <param>DiskSize=30</param>
+            <param>DiskSize=10</param>
         </testParameters>
         <AdditionalHWConfig>
             <DiskType>Managed</DiskType>
